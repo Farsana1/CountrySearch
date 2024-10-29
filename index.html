@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Search</title>
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      body{
+        background-image: url('https://www.thoughtco.com/thmb/0nAR9A5cAVrTg8py3pvLlQlBMnE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/world-in-geographic-projection-true-colour-satellite-image-99151124-58b9cc3e5f9b58af5ca7578d.jpg');
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      #main{
+        background-color: rgba(14, 13, 13, 0.418);
+        width: 100%;
+        height: 100vh;
+      }
+    </style>
+</head>
+<body>
+  <!-- <div id="bg"  class="container-fluid w-100 "> -->
+   <div id="main" style="height: 100vh;"  class="d-flex justify-content-center align-items-center">
+      <div class="border bg-secondary border-0 shadow p-4" style="background:linear-gradient(to right,rgba(3, 3, 204, 0.795),rgba(255, 255, 255, 0.692));">
+            <h1 class="text-center fs-1" style="color: rgb(232, 235, 227);  text-shadow: 3px 3px 8px rgba(192, 174, 174, 0.2);">Country Search</h1>
+           <div class="d-flex justify-content-center align-items-center mt-4">
+             <input class="p-2 rounded form-control" type="text" name="" id="result" placeholder="Enter Country Name">
+             <button type="button" class="btn btn-success ms-4 p-2 shadow text-light" onclick="search()">Search</button>
+             </div>
+
+             <!-- output  -->
+             <div class="container-fluid mt-3">
+              <div class="row" >
+                <div class="col-md-1"></div>
+                <div class="col-md-10" id="res"></div>
+              </div>
+                <div class="col-md-1"></div>
+              </div>
+             </div>
+        </div>
+      </div>
+   </div>
+    <!-- input box  .......placeholder
+     button to search
+    table to view country details
+    --->  
+</body>
+<script src="country.js"></script>
+</html>
